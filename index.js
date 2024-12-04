@@ -13,7 +13,7 @@ app.get("/", (res) => {
 
 // Endpoint to get the Google Maps URL
 app.get("/map", (req, res) => {
-  const apiKey = "AIzaSyA54gLUTN-8tqt3prTp_3rMYHhKf9xxFZo";
+  const apiKey = "AIzaSyBA_YseNz-fwIDmOrBRm_sFE-lYGLqLAt8";
   const coordinates = "33.216490781025186,-117.2717647177939";
   const url = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${coordinates}&zoom=18&maptype=satellite`;
   res.json({ url });
@@ -24,4 +24,3 @@ app.listen(port, () => {
 });
 
 export default app;
-
