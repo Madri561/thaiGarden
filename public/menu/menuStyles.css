@@ -1,0 +1,454 @@
+body {
+  padding-top: 0;
+  height: 100vh;
+}
+
+.container {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+body {
+  background-color: white;
+}
+
+.container nav ul {
+  justify-content: center;
+  list-style-type: none;
+  font-size: small;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.container nav ul li {
+  display: inline;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container nav ul li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.container h1,
+.container a {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  justify-content: center;
+}
+
+.container h1,
+.container a {
+  font-size: 3em;
+  text-align: center;
+}
+
+.special-offer {
+  background-color: #ffeb3b;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special-offer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 4rem;
+  font-family: Cardo, serif;
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin: 0;
+  color: maroon;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: -15rem;
+  /* margin-top: 20rem; */
+}
+
+.menuItemHeader {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.menuItemBox .menuItemHeader .menuItemName {
+  margin: 0;
+  padding: 0;
+  text-size-adjust: 100%;
+  color: black;
+  margin-left: 20px;
+  padding: 0;
+  font-family: Cardo, serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menuItemPrice {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.menuItemBox .menuItemDesc {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  font-family: Cardo, serif;
+  color: rgba(66, 62, 62, 0.62);
+  font-size: medium;
+}
+
+.starters,
+.soups,
+.rice-noodles,
+.mainDishes,
+.curries,
+.chefSpecials,
+.chefSpecialSeafood,
+.sideOrders,
+.desserts,
+.beverages {
+  text-align: left;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.menuItemBox {
+  line-height: 1.5;
+  overflow: hidden;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-bottom: 1px dashed gray;
+}
+
+.menuItemRight {
+  margin-top: 0px;
+}
+
+.starters p,
+.soups p,
+.rice-noodles p,
+.mainDishes p,
+.curries p,
+.chefSpecials p,
+.chefSpecialSeafood p,
+.sideOrders p,
+.desserts p,
+.beverages p {
+  display: flex;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-family: Cardo, serif;
+}
+
+.choiceOfMeat h4 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  width: 100vw;
+  height: 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  font-family: Cardo, serif;
+  font-weight: bold;
+  color: rgb(72, 71, 71);
+  margin-left: -15rem;
+}
+.choiceOfMeat h3 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 4rem;
+  font-family: "Source Sans 3", serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+
+  color: black;
+  align-items: center;
+  justify-content: center;
+  margin-left: -15rem;
+}
+
+.RiceAndNoodles .choiceOfMeat h4,
+.entrees .choiceOfMeat h4,
+.curry .choiceOfMeat h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: Cardo, serif;
+  font-weight: bold;
+  color: rgb(72, 71, 71);
+  text-align: left;
+  margin-left: -15rem;
+}
+
+.RiceAndNoodles .price,
+.entrees .price,
+.curry .price {
+  padding-left: 50px;
+  font-size: 1.5rem;
+  font-family: Cardo, serif;
+  font-weight: bold;
+  color: rgb(72, 71, 71);
+  text-align: right;
+}
+
+.logo {
+  max-height: 4rem;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 100, 0.8);
+  z-index: 1000;
+}
+.container {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  header .logo {
+    max-height: 5rem;
+    margin-right: 20px;
+  }
+
+  header h1 {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-family: "Cardo", serif;
+    color: #484747;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  header nav ul li {
+    font-size: 1.2rem;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color: #484747;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5vh;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    padding-right: 5rem;
+    margin: 0;
+
+    font-size: 1.2rem;
+    font-family: "Cardo", serif;
+    color: #484747;
+  }
+  .headerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Cardo", serif;
+    color: #484747;
+    position: relative;
+  }
+
+  .headerItem::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #484747;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .headerItem:hover::after {
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    background: url("../foodPictures/anotherUpTopPicture.jpg") no-repeat center
+      center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 10px;
+
+    z-index: 1000;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .logo {
+    max-height: 50px;
+    margin-right: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .headerItem {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Cardo", serif;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  .headerItem::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .headerItem:hover::after {
+    width: 100%;
+  }
+}
+
+.links {
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "Cardo", serif;
+  color: #484747;
+  position: relative;
+}
+header {
+  transition: height 0.3s ease;
+}
+header * {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.headerItem {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
