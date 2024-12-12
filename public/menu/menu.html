@@ -1000,9 +1000,12 @@
         <address>
           4750 Oceanside Blvd, Oceanside, CA 92056<br />
           Phone: (760) 940-1009<br />
-          <!-- Email: <a href="mailto:info@thaigarden.com">info@thaigarden.com</a> -->
         </address>
       </footer>
+
+      <div id="callStorePopup">
+        <a href="tel:7609401009">Call Thai Garden</a>
+      </div>
     </main>
     <script>
       const header = document.querySelector("header");
@@ -1028,7 +1031,7 @@
 
           const targetId = this.getAttribute("href").substring(1);
           const targetElement = document.getElementById(targetId);
-          const offset = 75; // Adjust this value to stop before the target
+          const offset = 75;
 
           const targetPosition =
             targetElement.getBoundingClientRect().top +
@@ -1041,6 +1044,19 @@
           });
         });
       });
+
+      const popup = document.getElementById("callStorePopup");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          popup.classList.add("show");
+        } else {
+          popup.classList.remove("show");
+        }
+      });
+      
+
+     
     </script>
   </body>
 </html>
