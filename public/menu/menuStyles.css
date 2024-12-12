@@ -455,7 +455,7 @@ header * .headerItem {
   bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("/public/foodPictures/sidePicOfEntree.jpg");
+  background-image: url("../foodPictures/sidePicOfEntree.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
